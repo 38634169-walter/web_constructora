@@ -1,0 +1,119 @@
+
+/*   PORTADA   //////////////////////////////////////////////////////////////*/
+
+.portada-servicios{
+    background: linear-gradient(60deg,rgba(0, 0, 0, 0.637)100%,transparent 95% 100%),url(../../imagenes/portada/4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border:2px solid white;
+    border-radius:15px;
+    text-align: center;
+    margin-top:3cm;
+    padding:4cm 0px;
+    animation:portadaServicios 1s;
+    transition:all 1s;
+}
+
+@keyframes portadaServicios{
+    0%{
+        margin-left:-100%;
+    }
+}
+
+.portada-servicios>h1{
+    font-size: calc(1vw + 25px);
+    color:white;
+}
+.portada-servicios>p{
+    font-size: calc(1vw + 9px);
+    padding-top:15px;
+    color:white;
+}
+.portada-servicios>i{
+    font-size:calc(1vw + 20px);
+    color:aquamarine;
+    border:1px solid aquamarine;
+    border-radius:100%;
+    padding:10px;
+    position:relative;
+    top:1cm;
+    margin:0 10px;
+}
+
+/*   CUERPO   //////////////////////////////////////////////////////////////*/
+
+/* tituo y introduccion */
+.cuerpo-container{
+    background:linear-gradient(270deg,rgba(22, 109, 112, 0.61) 1%, rgba(0, 0, 0, 0.61)15% 95%,red 95% 100%);
+    padding:2cm 10px;
+    text-align:center;
+    margin-top:1cm;
+}
+.cuerpo-container>h1{
+    text-shadow: 2px 2px 12px white;
+    font-size: calc(1vw + 35px);
+    padding-bottom:30px;
+    background:rgba(1, 1, 112, 0.562);
+    width:60%;
+    margin:auto;
+    padding-top:3cm;
+    margin-top:-2cm;
+    margin-bottom:2cm;
+}
+.cuerpo-container>div{
+    width:60%;
+    margin:auto;
+}
+.cuerpo-container>div>img{
+    width:8cm;
+    height:4cm;
+    border-radius:15px;
+    padding-right:15px;
+}
+.cuerpo-container>div>p{
+    color:white;
+    font-size: calc(1vw + 8px);
+    text-align: justify;  
+    text-indent: 23px;
+    margin-bottom:3cm;
+}
+
+
+/* trabajos */
+
+.cuerpo-container>ul{
+    display:flex;
+    justify-content: space-between;
+    justify-items: center;
+    width:80%;
+    margin:auto;
+    margin-top:1cm;
+}
+
+.cuerpo-container>ul>img{
+    width:10cm;
+    height:8cm;
+    border-radius:15px;
+}
+
+.cuerpo-container>ul>div{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerpo-container>ul>div>h1{
+    font-size:calc(1vw + 20px);
+    text-shadow:2px 2px 12px white;
+    padding:0px 10px;
+    padding-bottom:15px;
+}
+.cuerpo-container>ul>div>p{
+    color:white;
+    font-size:calc(1vw + 6px);
+    padding:0px 20px;
+}
+
+

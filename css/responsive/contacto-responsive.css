@@ -1,0 +1,81 @@
+
+
+@media all and (max-width:800px){
+
+
+    /*   PORTADA   //////////////////////////////////////////////////////////////*/
+
+    .portada-contacto{
+        margin-top:2cm;
+        padding:1cm 0px;
+        padding-bottom:2cm;
+    }
+
+    /*   MAIL CONTAINER   //////////////////////////////////////////////////////////////*/
+
+    /* formulario */
+
+    .mail-container>div>form{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mail-container>div>form>input{
+        height:1cm;
+        font-size: 15px;
+    }
+    .mail-container>div>form>textarea{
+        height:5cm;
+        font-size: 15px;
+    }
+}
+
+
+@media all and (max-width:400px){
+
+
+    /*   PORTADA   //////////////////////////////////////////////////////////////*/
+
+    .portada-contacto>h1{
+        font-size: calc(1vw + 20px);
+    }
+    .portada-contacto>p{
+        font-size: calc(1vw + 12px);
+        padding:0px 15px;
+        padding-top:15px;
+    }
+    .portada-contacto>i{
+        font-size:calc(1vw + 13px);
+        
+    }
+
+
+    /*   MAIL CONTAINER   //////////////////////////////////////////////////////////////*/
+    
+    /* formulario */
+
+    .mail-container>div>form{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mail-container>div>form>input{
+        height:0.7cm;
+        font-size: 12px;
+    }
+    .mail-container>div>form>textarea{
+        height:5cm;
+        font-size: 10px;
+    }
+    .mail-container>div>form>button{
+        border:6px solid rgb(4, 228, 4);
+        width:2.5cm;
+        padding:5px;
+    }
+    .mail-container>div>form>button:hover{
+        border:6px solid green;
+    }
+
+}

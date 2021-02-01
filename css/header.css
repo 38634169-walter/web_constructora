@@ -1,0 +1,167 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background: white;
+    z-index:3;
+}
+
+li{
+    list-style: none;
+}
+
+
+/*   MENU   //////////////////////////////////////////////////////////////*/
+
+/* menu principal */
+
+.menu-container{
+    width:80%;
+    height:4cm;
+    left:8%;
+    top: 0;
+    position:absolute;
+}
+.menu{
+    width: 65%;
+    float:left;
+    margin-top: 0;
+    padding-left: 15px;
+    height: 100%;
+    background:red;
+    box-shadow: 10px 15px 10px black;
+    animation:menuPrincipal1 1s;
+    position: relative;
+}
+
+@keyframes menuPrincipal1{
+    0%{
+        height:0;
+    }
+}
+
+
+.menu>div>li{
+    height: 1cm;
+    margin-right: 10px;
+    margin-top:3cm;
+    padding-top: 5px;
+    position: relative;
+    display:inline-block;
+    color:white;
+    font-size: calc(1vw + 7px);
+    animation:menuPrincipal2 2s;
+}
+
+@keyframes menuPrincipal2{
+    0%{
+        opacity:0;
+    }
+}
+
+.menu>div>li>a{
+    text-decoration: none;
+    color:white;
+    font-size: calc(1vw + 5px);
+}
+.menu>div>li>a:hover{
+    color:aquamarine;
+}
+.menu>div>li:hover{
+    color:aquamarine;
+    cursor: pointer;
+}
+
+/*FLECHAS MENU*/
+.flechas{
+    position:absolute;
+    margin-right: 0;
+    font-size: 19px;
+    color:white;
+}
+
+.flechaDerecha{
+    display:none;
+}
+.flechaAbajo{
+    display:contents;
+}
+
+
+
+/* nombre de la empresa */
+.nom{
+    width:25%;
+    float:right;
+    margin-top: 1cm;
+    height:100%;
+    animation:nombreEmpresa 3s;
+    transition: opacity 3s;
+}
+
+@keyframes nombreEmpresa{
+    0%{
+        opacity:0;
+    }
+}
+
+
+.nom>li{
+    border:2px solid black;
+    border-radius: 15px;
+    height:2cm;
+    background: rgb(158, 157, 157);
+    box-shadow: 15px 10px 15px black;
+}
+.nom>li>h1{
+    color:white;
+    text-align: center;
+    margin-top: 0.5cm;
+    text-shadow: -2px -2px 7px black;
+    font-size: calc(1vw + 24px);
+}
+
+/*   SUB-MENU   //////////////////////////////////////////////////////////////*/
+
+
+.sub-menu{
+    position: absolute;
+    background:rgba(255, 0, 0, 0.712);
+    width:5cm;
+    padding-bottom: 17px;
+    padding-top: 17px;
+    border-radius: 15px;
+    z-index:1000;
+    display:none;
+}
+.sub-menu>li{
+    border-bottom: 2px 5px solid aquamarine;
+    padding-top:15px;
+}
+.sub-menu>li>a{
+    text-decoration: none;
+    padding-left: 17px;
+    text-shadow: -2px -2px 17px black;
+    color:white;
+    font-size: calc(1vw + 7px);
+}
+.sub-menu>li{
+    color:white;
+    font-size: calc(1vw + 7px);
+}
+.sub-menu>li:hover{
+    background: aquamarine;
+}
+.menu>li:hover .sub-menu{
+    display: block;
+}
+
+
+/*   MENU RESPONSIVE   ///////////////////////////////////////////////////////*/
+
+.menu-responsive{
+    display:none;
+}
+

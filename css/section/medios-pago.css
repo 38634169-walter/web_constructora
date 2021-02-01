@@ -1,0 +1,201 @@
+/*   PORTADA   //////////////////////////////////////////////////////////////*/
+
+.portada-pagos{
+    background: linear-gradient(60deg,rgba(0, 0, 0, 0.637)100%,transparent 95% 100%),url(../../imagenes/portada/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border:2px solid white;
+    border-radius:15px;
+    text-align: center;
+    margin-top:3cm;
+    padding:4cm 0px;
+    animation:portadaContacto 1s;
+    transition:all 1s;
+}
+
+@keyframes portadaContacto{
+    0%{
+        margin-left:-100%;
+    }
+}
+
+.portada-pagos>h1{
+    font-size: calc(1vw + 25px);
+    color:white;
+}
+.portada-pagos>p{
+    font-size: calc(1vw + 9px);
+    padding-top:15px;
+    color:white;
+}
+.portada-pagos>i{
+    font-size:calc(1vw + 20px);
+    color:aquamarine;
+    border:1px solid aquamarine;
+    border-radius:100%;
+    padding:10px;
+    position:relative;
+    top:1cm;
+    margin:0 10px;
+}
+
+/*   CUERPO   //////////////////////////////////////////////////////////////*/
+
+.cuerpo-container{
+    background: linear-gradient(320deg, rgba(0, 0, 0, 0.692)90%,rgb(52, 52, 102) 90% 100%);
+    margin-top: 1cm;
+    margin-bottom:-2cm;
+}
+.cuerpo-container>div{
+    background: linear-gradient(220deg,rgb(52, 52, 102) 10%, transparent 10% 100%);
+    margin-top:0cm;
+    height:100%;
+    padding:2cm 0px;
+}
+/* titulo */
+
+.titulo-container{
+    width:60%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.titulo-container>h1{
+    font-size:calc(1vw + 25px);
+    color:white;
+    padding-bottom:10px;
+    text-align: center;
+}
+.titulo-container>p{
+    font-size:calc(1vw + 10px);
+    color:white;
+    padding:10px 10px;
+    padding-bottom:20px;
+}
+.titulo-container>a{
+    text-decoration:none;
+    border:1px solid black;
+    background: rgba(0, 0, 0, 0.534);
+    border-radius: 15px;
+    width: 5cm;
+    padding:8px;
+    text-align:center;
+    color:white;
+    font-size: 20px;
+    transition: all 1s;
+}
+.titulo-container>a:hover{
+    width:8cm;
+}
+
+
+/* INFO */
+
+.informacion-container{
+    display:flex;
+    justify-content:center;
+    justify-items:center;
+    margin-top:2cm;
+    background:rgb(52, 52, 102);
+    padding-bottom:1cm;
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+}
+.informacion-container>ul{
+    margin:0px 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    width:33%;
+}
+.informacion-container>ul>i{
+    font-size: calc(1vw + 80px);
+    color:aquamarine;
+    padding-bottom:20px;
+}
+.informacion-container>ul:nth-child(3) i{
+    padding-top:0.8cm;
+    padding-bottom: 3px;
+}
+.informacion-container>ul>p{
+    font-size:calc(1vw + 9px);
+    color:black;
+}
+
+/* formulario */
+
+.formulario-container{
+    width:80%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-top:3cm;
+}
+.formulario-container>h1{
+    text-shadow:2px 2px 12px white;
+    font-size:calc(1vw + 25px);
+    padding-bottom:20px;
+}
+.formulario-container>p{
+    font-size:calc(1vw + 9px);
+    color:white;
+    padding-bottom:40px;
+}
+.formulario-container>form{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.formulario-container>form>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario-container>form>div>ul{
+    margin-left:30px;
+}
+.formulario-container>form>div>ul>label{
+    display: grid;
+    font-size: calc(1vw + 7px);
+    text-shadow: 2px 2px 12px white;
+    padding-right:10px;
+    padding-top:5px;
+}
+.formulario-container>form>div>ul>label>input{
+    border-radius:35px;
+    font-size:25px;
+    height:0.8cm;
+    padding-left:15px;
+    margin-top:5px;
+}
+.formulario-container>form>div>ul>label>textarea{
+    border-radius:35px;
+    font-size: 25px;
+    height:6cm;
+    padding-left:15px;
+    margin-top:5px;
+}
+
+.formulario-container>form>button{
+    border:9px solid rgb(4, 226, 4);
+    background: green;
+    border-radius: 35px;
+    width: 4cm;
+    padding:8px;
+    color:white;
+    font-size: 20px;
+    margin-top:1cm;
+    cursor:pointer;
+    transition: all 1s;
+}
+.formulario-container>form>button:hover{
+    border:9px solid green;
+    background: rgb(4, 226, 4);
+}
