@@ -24,12 +24,16 @@ function send_mail(){
                     icon: 'success',
                     title: 'Tu mail fue enviado con exito',
                     showConfirmButton: true,
-                    timer: 5500
                   })
 
             }
             else{
-                throw new Error("Error: " + response.statusText);
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'Hubo un error al enviar el email',
+                    showConfirmButton: true,
+                  })
             }
         });
 }

@@ -1,0 +1,562 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background: white;
+    z-index:3;
+}
+
+li{
+    list-style: none;
+}
+
+
+/*   MENU   //////////////////////////////////////////////////////////////*/
+
+/* menu principal */
+
+.menu-container{
+    width:80%;
+    height:4cm;
+    left:8%;
+    top: 0;
+    position:absolute;
+}
+.menu{
+    width: 65%;
+    float:left;
+    margin-top: 0;
+    padding-left: 15px;
+    height: 100%;
+    background:red;
+    box-shadow: 10px 15px 10px black;
+    animation:menuPrincipal1 1s;
+    position: relative;
+}
+
+@keyframes menuPrincipal1{
+    0%{
+        height:0;
+    }
+}
+
+.menu>div>li{
+    height: 1cm;
+    margin-right: 10px;
+    margin-top:3cm;
+    padding-top: 5px;
+    position: relative;
+    display:inline-block;
+    color:white;
+    font-size: calc(1vw + 7px);
+    animation:menuPrincipal2 2s;
+}
+
+@keyframes menuPrincipal2{
+    0%{
+        opacity:0;
+    }
+}
+
+.menu>div>li>a{
+    text-decoration: none;
+    color:white;
+    font-size: calc(1vw + 5px);
+}
+.menu>div>li>a:hover{
+    color:aquamarine;
+}
+.menu>div>li:hover{
+    color:aquamarine;
+    cursor: pointer;
+}
+
+/*FLECHAS MENU*/
+.flechas{
+    position:absolute;
+    margin-right: 0;
+    font-size: 19px;
+    color:white;
+}
+
+.flechaDerecha{
+    display:none;
+}
+.flechaAbajo{
+    display:contents;
+}
+
+
+
+/* nombre de la empresa */
+.nom{
+    width:25%;
+    float:right;
+    margin-top: 1cm;
+    height:100%;
+    animation:nombreEmpresa 3s;
+    transition: opacity 3s;
+}
+
+@keyframes nombreEmpresa{
+    0%{
+        opacity:0;
+    }
+}
+
+
+.nom>li{
+    border:2px solid black;
+    border-radius: 15px;
+    height:2cm;
+    background: rgb(158, 157, 157);
+    box-shadow: 15px 10px 15px black;
+}
+.nom>li>h1{
+    color:white;
+    text-align: center;
+    margin-top: 0.5cm;
+    text-shadow: -2px -2px 7px black;
+    font-size: calc(1vw + 24px);
+}
+
+/*   SUB-MENU   //////////////////////////////////////////////////////////////*/
+
+
+.sub-menu{
+    position: absolute;
+    background:rgba(255, 0, 0, 0.712);
+    width:5cm;
+    padding-bottom: 17px;
+    padding-top: 17px;
+    border-radius: 15px;
+    z-index:1000;
+    display:none;
+}
+.sub-menu>li{
+    border-bottom: 2px 5px solid aquamarine;
+    height:1cm;
+    line-height:1cm;
+}
+.sub-menu>li>a{
+    text-decoration: none;
+    padding-left: 17px;
+    text-shadow: -2px -2px 17px black;
+    color:white;
+    font-size: calc(1vw + 7px);
+}
+.sub-menu>li{
+    color:white;
+    font-size: calc(1vw + 7px);
+}
+.sub-menu>li:hover{
+    background: aquamarine;
+}
+.menu>li:hover .sub-menu{
+    display: block;
+}
+
+
+/*   MENU RESPONSIVE   ///////////////////////////////////////////////////////*/
+
+.menu-responsive{
+    display:none;
+}
+
+footer{
+    width:100%;
+    margin-top:7cm;
+    z-index:1;
+    background:rgb(0, 0, 0);
+    /*height:29cm;*/
+    overflow: hidden;
+}
+
+
+/*   INFORMACION-PIE-PAGINA   //////////////////////////////////////////////////////////////*/
+.info-super-container{
+    display:flex;
+    justify-items: center;
+    justify-content: center;
+}
+.info-container{
+    width:90%;
+    height:5cm;
+    margin:auto;
+    position: absolute;
+    margin-top:-2cm;
+    z-index:4;
+    border:2px solid white;
+    box-shadow: 15px 10px 45px black;
+    background: rgb(128, 128, 128);
+    display: flex;
+}
+.info-container>ul{
+    padding:15px;
+    margin:0px 19px;
+    margin-top: 0;
+    height: 100%;
+    width:30%;
+}
+.info-container>ul>h1{
+    font-size: calc(1vw + 14px);
+    color:white;
+}
+.info-container>ul>li{
+    font-size: calc(1vw + 7px);
+    margin-top:5px;
+}
+
+
+
+.redes-sociales{
+    position:relative;
+}
+.redes-sociales>li{
+    display: inline-block;
+    margin-left:6px;
+    margin-right:6px;
+    border-radius: 35px;
+    padding:5px;
+}
+#facebook-footer{
+    padding:8px 12px;
+}
+.redes-sociales>li>a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+
+#instagram-footer:hover{
+    background: linear-gradient(200deg, rgb(195,42,163),#f46f30);
+}
+#instagram-footer>a:hover{
+    color:white;
+}
+#facebook-footer:hover{
+    background: rgb(59,89,152);
+}
+#facebook-footer>a:hover{
+    color:white;
+}
+#youtube-footer:hover{
+    background: rgb(255,0,0);
+}
+#youtube-footer>a:hover{
+    color:white;
+}
+#wpp-footer:hover{
+    background: rgb(37,211,102);
+}
+#wpp-footer>a:hover{
+    color:white;
+}
+
+/*   MAPA  //////////////////////////////////////////////////////////////*/
+
+.mapa{
+    width:80%;
+    margin:auto;
+    height:7cm;
+    margin-top: 5cm;
+}
+
+
+.mapa>iframe{
+    width:100%;
+    height:100%;
+    border-radius: 35px;
+}
+
+
+/*   FOOTER NEGRO  //////////////////////////////////////////////////////////////*/
+
+.footer-container{
+    margin-top:1cm;
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.footer-container>ul{
+    width:50%;
+    padding:0px 20px;
+}
+
+/* LEFT */
+.empresa{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.empresa>p{
+    color:white;
+    font-size: calc(1vw + 5px);
+    text-align: left;
+}
+
+/* RIGHT */
+
+.menu-footer{   
+    margin-top:1.5cm;
+}
+.menu-footer>li{
+    width:90%;
+    margin: auto;
+    border-bottom: 2px solid aquamarine;
+}
+.menu-footer>li>a{
+    color:white;
+    text-decoration: none;
+    font-size: calc(1vw + 5px);
+    text-align:center;
+}
+.menu-footer>li>a:hover{
+    color:aquamarine;
+}
+
+/*   FINAL DE PAGINA   //////////////////////////////////////////////////////////////*/
+
+.bottom{
+    width:100%;
+    background:rgb(143, 143, 143);
+    margin-top:2cm;
+    padding:10px 0px;
+}
+.bottom>p{
+    text-align: center;
+    font-size:calc(1vw + 7px);
+    color:white;
+    padding:0px 15px;
+}
+
+@media screen and (max-width:800px){
+    
+    
+    /*   MENU RESPONSIVE   ///////////////////////////////////////////////////////*/
+
+    .menu-responsive{
+        display:block;
+        top:0;
+        width:100%;
+        position:fixed;
+        background:red;
+        padding:13px;
+        z-index:10000;
+    }
+    .menu-responsive>h1>i{
+        float:right;
+        margin-right:1cm;
+        font-size: calc(1vw + 27px);
+        color:white;
+    }
+    .menu-responsive>h1{
+        font-size: calc(1vw + 27px);
+        color:white;
+    }
+
+    /*   MENU PRINCIPAL   ///////////////////////////////////////////////////////*/
+
+    .menu-container{
+        width:80%;
+        left:-100%;
+        top:59px;
+        position:fixed;
+        height:calc(100vh - 59px);
+        overflow: scroll;
+        background:red;
+        z-index:10000;
+    }
+
+    .menu{
+        width:100%;
+        float:none;
+        margin-top: 1cm;
+        padding-left: 5px;
+        box-shadow: none;
+        display:block;
+    }
+    
+    .menu>div>li{
+        width:100%;
+        margin-right: 0;
+        margin-top:15px;
+        padding-top:0;
+        padding-left:15px;
+        font-display: block;
+        font-size: calc(1vw + 14px);
+        height:1cm;
+        line-height: 1cm;
+    }
+
+    .menu>div>li:hover{
+        background:rgb(250, 77, 77);
+    }
+
+    .menu>div>li>a{
+        font-size: calc(1vw + 14px);
+    }
+        
+
+    /* nombre de la empresa */
+    .nom{
+        width:100%;
+        float:none;
+        margin-top: 1cm;
+        height:2cm;
+    }
+
+    .nom>li{
+        width:70%;
+        margin:auto;
+        height:1.5cm;
+    }
+    .nom>li>h1{
+        margin-top: 0.3cm;
+    }
+
+
+    /*   SUB-MENU   //////////////////////////////////////////////////////////////*/
+    
+    .sub-menu{
+        width:100%;
+        padding-top:0;
+        position:relative;
+        display: none;
+        background:rgb(250, 77, 77);
+        border-radius: 0;
+        margin-bottom:1cm;
+    }
+    .sub-menu>li>a{
+        font-size: calc(1vw + 14px);
+    }
+    .menu>li:hover .sub-menu{
+        display: none;
+    }
+
+    
+
+
+
+    /*   FOOTER   //////////////////////////////////////////////////////////////*/   
+    /*   INFORMACION-PIE-PAGINA   //////////////////////////////////////////////////////////////*/   
+
+    .info-container{
+        height:3.2cm;
+        margin-top:-1.5cm;
+    }
+    .info-container>ul{
+        margin-left: 3px;
+        margin-right:3px;
+    }
+    .info-container>ul>li{
+        font-size: calc( 1vw + 7px);
+    }
+    .info-container>ul>h1{
+        font-size: calc( 1vw + 9px);
+    }
+
+    #facebook-footer{
+        padding:5px 7px;
+    }
+
+
+    /*   FOOTER NEGRO  //////////////////////////////////////////////////////////////*/
+    
+
+    
+    .menu-footer>li>a{
+        color:white;
+        font-size: calc(1vw + 9px);
+        text-align:center;
+    }
+    .empresa>p{
+        color:white;
+        font-size: calc(1vw + 9px);
+        text-align: center;
+    }
+
+
+}
+
+@media all and (max-width:630px){
+
+
+    footer{
+        margin-top:9cm;
+    }
+    /*   INFORMACION-PIE-PAGINA   //////////////////////////////////////////////////////////////*/
+
+    .info-container{
+        height:7cm;
+        display: block;
+        margin-top:-4cm;
+    }
+    .info-container>ul{
+        height: 1.4cm;
+        width:80%;
+        margin:auto;
+    }
+    .info-container>ul>li{
+        right:0;
+        left:0;
+        text-align: center;
+        font-size: calc( 1vw + 10px);
+    }
+    .info-container>ul>h1{
+        right:0;
+        left:0;
+        text-align: center;
+        font-size: calc( 1vw + 12px);
+    }
+    .redes-sociales{
+        right:0;
+        left:0;
+        text-align: center;
+    }
+    .redes-sociales>h1{
+        padding-top:15px;
+    }    
+
+}
+
+@media all and (max-width:400px){
+
+    
+    /*   FOOTER   //////////////////////////////////////////////////////////////*/
+    
+
+    .info-container{
+        margin-top:-3.5cm;
+    }
+    
+    .footer-container{
+        flex-direction:column;
+        align-items: center;
+    }
+    
+    
+    .footer-container>ul{
+        width:90%;
+    }
+    .menu-footer>li>a{
+        font-size: calc(1vw + 13px);
+    }
+    .empresa>p{
+        font-size: calc(1vw + 11px);
+    }
+    
+    /*   FINAL DE PAGINA   //////////////////////////////////////////////////////////////*/
+    
+    .bottom>p{
+        font-size:calc(1vw + 9px);
+    }
+
+}

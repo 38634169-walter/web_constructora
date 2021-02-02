@@ -55,7 +55,7 @@
     position: absolute;
     top:7.5cm;
     height: 15px;    
-    z-index:10000;
+    
 }
 .flechas-slider>li>i{
     cursor: pointer;
@@ -178,106 +178,92 @@
 /*   TEXTO-PRESENTACION   //////////////////////////////////////////////////////////////*/
 
 .presentacion{
-    width:100%;
-    height:8cm;
-    margin-top:3cm;
-
-}
-.presentacion>div{
-    height:100%;
-    width:70%;
+    width:90%;
     margin:auto;
-}
-.presentacion>div>ul{
-    margin-top: 0;
-    height: 100%;
-    width:30%;
-    float:left;
-    margin:5px;
+    margin-top:1cm;
     display:flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion>ul{
+    margin: 20px;
+    width:33%;
+    margin:auto;
+    margin:0px 20px;
+    margin-top:0;
+    height:8cm;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
     opacity:0;
     transition: 1s;
     border-radius: 35px;
+    box-shadow:15px 10px 15px black;
+    text-align:center;
 }
 
-
-
-
-.presentacion>div>ul>li{
-    width:100%;
-    text-align: center;
-    font-size: calc(1vw + 7px);
-}
-.presentacion>div>ul>li>h1{
-    text-align: center;
+.presentacion>ul>h1{
     font-size: calc(1vw + 9px);
-    margin-top:1cm;
     color:white;
     text-shadow: -2px -2px 15px black;
-    height:1cm;
+    position:absolute;
+    top:20px;
+    padding:20px;
 }
-.presentacion>div>ul>li>h1>i{
+.presentacion>ul>h1>i{
     margin-right:5px;
 }
-.presentacion>div>ul>li>p{
-    text-align: center;
+.presentacion>ul>p{
+    padding:0px 20px;
+    position:absolute;
+    top:80px;
+    color:white;
     font-size: calc(1vw + 7px);
-    color:black;
-    height:3cm;
-    margin:0px 10px;  
 }
-.presentacion>div>ul>li>button{
-    width:60%;
-    text-align: center;
-    margin-top: 20px;
+.presentacion>ul>a{
+    width:3cm;
     font-size: calc(1vw + 5px);
     border-radius: 35px;
+    border:0.1px solid white;
+    position: absolute;
+    top:230px;
     padding:12px;
     background:rgba(0, 0, 0, 0.671);
     color:white;
+    text-decoration: none;
     transition: transform 1s;
 }
-.presentacion>div>ul>li>button:hover{
+.presentacion>ul>a:hover{
     transform: scale(1.2);
 }
-.presentacion>div>ul>li>button>a{
-    text-decoration: none;;
-    color:rgb(255, 255, 255);
-}
-.presentacion>div>ul>li>button>a>i{
+
+.presentacion>ul>a>i{
     margin-right:10px;
     color:aquamarine
 }
 
 
-.presentacion>div>ul:nth-child(1){
+.presentacion>ul:nth-child(1){
     background:rgb(131, 131, 131);
 }
-.presentacion>div>ul:nth-child(2){
+
+.presentacion>ul:nth-child(2){
     background:rgb(190, 33, 33);
+
 }
-.presentacion>div>ul:nth-child(3){
+.presentacion>ul:nth-child(3){
     background:rgb(0, 0, 0);
 }
-.presentacion>div>ul:nth-child(3)>li>p{
-    color:white;
-}
-.presentacion>div>ul:nth-child(2)>li>p{
-    color:white;
-}
-.presentacion>div>ul:nth-child(1)>li>p{
-    color:white;
-}
 
 
-
-
-
-/*ANIMACION*/
+/*ANIMACIONES*/
 
 .added1{
     animation: aparecerIzq 2s;
+    transition: all 1s;
 }
 @keyframes aparecerIzq {
     0%{
@@ -291,6 +277,7 @@
 
 .added2{
     animation: aparecerArriba 2s;
+    transition: all 1s;
 }
 @keyframes aparecerArriba{
     0%{
@@ -323,13 +310,13 @@
 .info-2-container{
     margin-top: 1cm;
     width:100%;
-    height: 15cm;
     background: linear-gradient(20deg,rgba(240, 78, 78, 0.336) 30%,transparent 80%),url(../../imagenes/relleno/relleno1.jpg);
     background-size: 100% 100%;
+    border:2px solid rgb(149, 155, 149);
 }
 .info-2-container>div{
     background: rgba(0, 0, 0, 0.432);
-    height:15cm;
+    padding:1cm 0px;
 }
 
 
@@ -337,8 +324,6 @@
 /* titulo */
 
 .info-titulo{
-    right:0;
-    left:0;
     text-align: center;
     padding:0px 10px;
 }
@@ -354,9 +339,11 @@
 }
 
 /* secciones */
-.info-2-secciones{
-    float:left;
+.info-2-container>div>div{
     margin-top: 2cm;
+    display:flex;
+    justify-content: center;
+    align-content: center;
 }
 
 /* seccion izquierda */
@@ -386,13 +373,13 @@
     color:white;
     background:rgba(0, 0, 0, 0.726);
     padding:10px;
-    margin-left: 10px;
+    margin:0px 10px;
     cursor:pointer;
 }
 /* seccion derecha */
 
 .seccion-derecha{
-    width:45%;
+    width:50%;
     display:flex;
     justify-content: center;
     justify-items: center;
@@ -400,12 +387,13 @@
 .seccion-derecha>iframe{
     width:80%;
     height:100%;
-    margin-top:1cm;
+    border-radius:15px;
 }
 
 /*   INFO3   //////////////////////////////////////////////////////////////*/
 
 .info3-super-container{
+    margin-top: 2cm;
     background: linear-gradient(90deg,white 20%,rgb(179, 2, 2) 60%,rgba(255, 255, 255, 0.63)),url(../../imagenes/relleno/relleno5.jpg);
     background-size: 100% 100%;
 }
@@ -522,4 +510,328 @@
     color:white;
     font-size: calc(1vw + 19px);
     text-shadow: 2px 2px 2px black;
+}
+
+@media all and (max-width:800px){
+
+
+    /*   SLIDER PORTADA   ///////////////////////////////////////////////////////*/
+
+    .slider-portada-container{
+        position:absolute;
+        top:1.5cm;
+    }
+
+    .slider-portada{
+        height:10cm;
+    }
+
+    /*   TEXTO-PORTADA   //////////////////////////////////////////////////////////////*/
+
+    .texto-portada-container{
+        top:2cm;
+    }
+    
+    .texto-portada{
+        width: 70%;
+        height:5.5cm;
+    }
+    .texto-portada>li>h1{
+        font-size: calc(1vw + 15px);
+    }
+
+    .texto-portada>li>p{
+        font-size: calc(1vw + 10px);
+    }
+
+    /*ICONOS*/
+
+    .iconos-portada{
+        width: 65%;
+        margin:auto;
+        float:none;
+        margin-top: -1.2cm;
+    }   
+    .iconos-portada>li{
+        float:right;
+        margin:3px;
+    }
+    .iconos-portada>li>a>i{
+        padding:5px 1px;
+    }
+
+    #facebook{
+        padding:0;
+    }
+
+
+    /*   TEXTO-PRESENTACION   //////////////////////////////////////////////////////////////*/
+    
+    .presentacion{
+        margin-top:12cm;
+        flex-direction:column;
+    }
+    .presentacion>ul{
+        width:60%;
+        margin:0.5cm 0px;
+        height:7cm;
+    }
+    .presentacion>ul>a{
+        top:190px;
+        font-size: calc(1vw + 6px);
+    }
+    .presentacion>ul>h1{
+        font-size: calc(1vw + 11px);
+    }
+    .presentacion>ul>p{
+        font-size: calc(1vw + 10px);
+    }
+    
+    /*   INFO2   //////////////////////////////////////////////////////////////*/
+
+    .info-titulo>i{
+        padding-top: 1cm;
+    }
+    /* secciones */
+
+    .info-2-container>div>div{
+        flex-direction:column;
+        margin-top:0;
+        
+    }
+
+    /* seccion izquierda */
+
+    .seccion-izquierda{
+        width:10cm;
+        margin:auto;
+    }
+
+    /* seccion derecha */
+
+    .seccion-derecha{
+        width:10cm;
+        margin:auto;
+        padding:20px 0px;
+    }
+
+
+
+    /*   SLIDER   //////////////////////////////////////////////////////////////*/
+    .super-container-slider{
+        top:2cm;
+        height:7cm;
+    }
+    .slider{
+        width:8cm;
+        height:9cm;
+    }
+    .slider>ul{
+        width:40cm;
+    }
+
+    .slider>ul>li{
+        margin:0px 0.5cm;
+        width:8cm;
+        height:5cm;
+    }
+
+    @keyframes slider {
+        0%{
+            margin-left:0;
+        }
+        25%{
+            margin-left:-8cm;
+        }
+        50%{
+            margin-left: -16cm;
+            
+        }
+        75%{
+            margin-left: -24cm;
+        }
+        100%{
+            margin-left: -32cm;
+        }
+    }
+    /* titulo */
+
+    .trabajos{
+        width:100%;
+        margin:0.5cm 0px;
+    }
+
+}
+
+
+@media all and (max-width:400px){
+
+
+    /*ICONOS*/
+
+    .iconos-portada{
+        width: 65%;
+        margin:auto;
+        float:none;
+        margin-top: -1cm;
+    }   
+    .iconos-portada>li{
+        float:right;
+        margin:3px;
+    }
+    .iconos-portada>li>a>i{
+        padding:4px 0px;
+        height: 18px;
+        width: 25px;
+        
+    }
+
+    #facebook{
+        padding:0;
+    }   
+    
+    /*   SLIDER PORTADA   ///////////////////////////////////////////////////////*/
+
+    .slider-portada{
+        margin-top:1cm;
+        height:8cm;
+    }
+    .flechas-slider>li>i{
+        padding:9px;
+        font-size: calc(1vw + 7px);
+    }
+
+    .flecha-izquierda{
+        left:1cm;
+    }
+    .flecha-derecha{
+        right:1cm;
+    }   
+    /*   TEXTO-PORTADA   //////////////////////////////////////////////////////////////*/
+
+
+    .texto-portada-container{
+        top:3cm;
+    }
+
+    /*   TEXTO-PRESENTACION   //////////////////////////////////////////////////////////////*/
+    
+    .presentacion{
+        margin-top:11cm;
+    }
+    .presentacion>ul{
+        width:100%;
+    }
+
+    .presentacion>ul>a{
+        top:210px;
+    }
+
+    .presentacion>ul>h1{
+        font-size: calc(1vw + 13px);
+    }
+    .presentacion>ul>p{
+        font-size: calc(1vw + 12px);
+    }
+    
+    .presentacion>ul>a{
+        font-size: calc(1vw + 12px);
+    }
+
+    /*   INFO2   //////////////////////////////////////////////////////////////*/
+    
+    .info-2-container{
+        margin-top:0;
+    }
+    
+    /* titulo */
+
+    .info-titulo>p{
+        font-size: calc(1vw + 15px);
+    }
+
+    /* seccion izquierda */
+
+    .seccion-izquierda{
+        width:100%;
+    }
+    .seccion-izquierda>p{
+        font-size: calc(1vw + 15px);
+    }
+    .seccion-izquierda>p>strong{
+        font-size: calc(1vw + 19px);
+    }
+    .seccion-izquierda>a{
+        font-size: calc(1vw + 15px);
+    }
+
+    /* seccion derecha */
+
+    .seccion-derecha{
+        width:100%;
+    }
+
+    /*   INFO3   //////////////////////////////////////////////////////////////*/
+    
+    .info3-super-container>div>div{
+        flex-direction:column;
+        margin-top:0.5cm;
+    }
+    .info3-super-container>div>div>ul{
+        text-align: center;
+        margin:0.2cm 0px;
+    }
+    .info3-super-container>div>div>ul>h1{
+        font-size:calc(1vw + 19px);
+    }
+    .info3-super-container>div>div>ul>p{
+        font-size:calc(1vw + 12px);
+    }
+
+
+    /*   SLIDER   //////////////////////////////////////////////////////////////*/
+    .super-container-slider{
+        top:2cm;
+        height:6cm;
+    }
+    .slider{
+        width:5.5cm;
+        height:8cm;
+    }
+
+    .slider>ul{
+        width:27.5cm;
+    }
+
+    .slider>ul>li{
+        padding-top:0.5cm;
+        margin:0px 0.5cm;
+        width:5.5cm;
+        height:3.5cm;
+    }
+
+    @keyframes slider {
+        0%{
+            margin-left:0;
+        }
+        25%{
+            margin-left:-5.5cm;
+        }
+        50%{
+            margin-left: -11cm;
+            
+        }
+        75%{
+            margin-left: -16.5cm;
+        }
+        100%{
+            margin-left: -22cm;
+        }
+    }
+    
+    /* titulo */
+
+    .trabajos>li>h1{
+        font-size: calc(1vw + 15px);
+    }
 }

@@ -12,16 +12,41 @@
         <!--jQUERY-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!--MIS CSS-->
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/responsive/footer-header-responsive.css">
+        <link rel="stylesheet" href="css/footer-y-header.css">
         <link rel="stylesheet" href="css/section/index.css">
-        <link rel="stylesheet" href="css/responsive/index-responsive.css">
         <!--Javascript-->
         <script src="js/menuPrincipal.js"></script>
+        <script src="js/slider-portada.js"></script>
     </head>
     <body>
         <header>
+            <div class="menu-responsive">
+                <h1><i class="fas fa-align-justify toggle-menu"></i>Menu</h1>
+            </div>
+            <nav class="menu-container">  <!--NAV-->
+                <ul class="nom">
+                    <li>
+                        <h1>Mortenzen</h1>
+                    </li>
+                </ul>
+                <ul class="menu">
+                    <div>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li id="mostrar-menu-btn">Compromiso  <i class="fas fa-caret-square-down flechaAbajo flechas"></i><i class="fas fa-caret-square-right flechaDerecha flechas"></i>
+                            <ul class="sub-menu">
+                                <li><a href="">Vacio</a></li>
+                                <li><a href="">Vacio</a></li>
+                                <li><a href="">Vacio</a></li>
+                                <li><a href="">Vacio</a></li>
+                                <li><a href="#ubicacion">Ubicacion</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="medios-pagos.html">Financiacion</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </div>
+                </ul>
+            </nav>
             <div class="slider-portada-container">         <!--SLIDER PORTADA-->
                 <ul>
                     <li class="slider-portada s1"></li>
@@ -52,79 +77,44 @@
                     </li>
                 </ul>
                 <ul class="iconos-portada">
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li id="facebook"><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-youtube-square"></i></a></li>
-                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li id="facebook"><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.youtube.com"><i class="fab fa-youtube-square"></i></a></li>
+                    <li><a href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a></li>
                 </ul>
             </div>
-            <div class="menu-responsive">
-                <h1><i class="fas fa-align-justify toggle-menu"></i>Menu</h1>
-            </div>
-            <nav class="menu-container">  <!--NAV-->
-                <ul class="nom">
-                    <li>
-                        <h1>Mortenzen</h1>
-                    </li>
-                </ul>
-                <ul class="menu">
-                    <div>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li id="mostrar-menu-btn">Compromiso  <i class="fas fa-caret-square-down flechaAbajo flechas"></i><i class="fas fa-caret-square-right flechaDerecha flechas"></i>
-                            <ul class="sub-menu">
-                                <li><a href="">Vacio</a></li>
-                                <li><a href="">Vacio</a></li>
-                                <li><a href="">Vacio</a></li>
-                                <li><a href="">Vacio</a></li>
-                                <li><a href="#ubicacion">Ubicacion</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="html/servicios.html">Servicios</a></li>
-                        <li><a href="html/medios-pagos.html">Financiacion</a></li>
-                        <li><a href="html/contacto.html">Contacto</a></li>
-                    </div>
-                </ul>
-            </nav>
         </header>                          
         <section>
             <div class="presentacion">
-                <div>
-                    <ul class="presentacion-servicios animacionOne">
-                        <li><h1><i class="fas fa-briefcase"></i>Servicios</h1></li>
-                        <li>
-                            <p>
-                                Contamos con servicios de ayuda según
-                                la convenicencia del cliente, brindamos
-                                asistencia de posterior al trabajo...
-                            </p>
-                        </li>
-                        <li><button><a href="html/servicios.html"><i class="far fa-list-alt"></i>Ver más</a></button></li>
-                    </ul>
-                    <ul class="presentacion-trabajos animacionTwo">
-                        <li><h1><i class="fas fa-chess-knight"></i>Nuestros trabajos</h1></li>
-                        <li>
-                            <p>
-                                Trabajos bien hechos demuestran una fuerte
-                                confianza a la hora de contratar un servicios,
-                                por eso queremos compartir con vos nuestros 
-                                trabajos...
-                            </p>
-                        </li>
-                        <li><button><a href="#trabajos"><i class="fas fa-wrench"></i>Ver más</a></button></li>
-                    </ul>
-                    <ul class="presentacion-pagos animacionThree">
-                        <li><h1><i class="fas fa-chart-line"></i>Pagos accesibles</h1></li>
-                        <li>
-                            <p>
-                                Comprendemos la importancia de los proyectos 
-                                de todas personas, por eso damos medios de 
-                                pagos accesibles para que puedas seguir con
-                                tus proyectos...
-                            </p>
-                        </li>
-                        <li><button><a href="html/medios-pagos.html"><i class="fas fa-hand-holding-usd"></i>Ver más</a></button></li>
-                    </ul>
-                </div>
+                <ul class="presentacion-servicios animacionOne">
+                    <h1><i class="fas fa-briefcase"></i>Servicios</h1>
+                    <p>
+                        Contamos con servicios de ayuda según
+                        la convenicencia del cliente, brindamos
+                        asistencia de posterior al trabajo...
+                    </p>
+                    <a href="html/servicios.html"><i class="far fa-list-alt"></i>Ver más</a>
+                </ul>
+                <ul class="presentacion-trabajos animacionTwo">
+                    <h1><i class="fas fa-chess-knight"></i>Nuestros trabajos</h1>
+                    <p>
+                        Trabajos bien hechos demuestran una fuerte
+                        confianza a la hora de contratar un servicios,
+                        por eso queremos compartir con vos nuestros 
+                        trabajos...
+                    </p>
+                    <a href="#trabajos"><i class="fas fa-wrench"></i>Ver más</a>
+                </ul>
+                <ul class="presentacion-pagos animacionThree">
+                    <h1><i class="fas fa-chart-line"></i>Pagos accesibles</h1>
+                    <p>
+                        Comprendemos la importancia de los proyectos 
+                        de todas personas, por eso damos medios de 
+                        pagos accesibles para que puedas seguir con
+                        tus proyectos...
+                    </p>
+                    <a href="html/medios-pagos.html"><i class="fas fa-hand-holding-usd"></i>Ver más</a>
+                </ul>
             </div>
             <div class="info-2-container">
                 <div>
@@ -135,15 +125,17 @@
                             , desarrollado por profesionales capacitados con años de experiencia en el rubro
                         </p>
                     </ul>
-                    <ul class="info-2-secciones seccion-izquierda">
-                        <p><strong>Responsabilidad</strong> sobre las cosas destacamos la responsabilidad
-                                de nuestro profecionales a cargo para desarrollar las tareas mas meticulosas
-                        </p>
-                        <a href="html/servicios.html">Mas info</a>
-                    </ul>
-                    <ul class="info-2-secciones seccion-derecha">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/OHju03Tvjzc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </ul>
+                    <div>
+                        <ul class="seccion-izquierda">
+                            <p><strong>Responsabilidad</strong> sobre las cosas destacamos la responsabilidad
+                                    de nuestro profecionales a cargo para desarrollar las tareas mas meticulosas
+                            </p>
+                            <a href="html/servicios.html">Mas info</a>
+                        </ul>
+                        <ul class="seccion-derecha">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/OHju03Tvjzc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="info3-super-container">             <!--INFO 3-->
@@ -202,8 +194,6 @@
                 </div>
             </div>
         </section>
-        <script src="js/animaciones.js"></script>
-        <script src="js/slider-portada.js"></script>
         <footer>
             <div class="info-super-container">
                 <div class="info-container">
@@ -218,12 +208,12 @@
                         <li>secretaria@mortenzen.com</li>
                         <li>rrhh@mortenzen.com</li>
                     </ul>
-                    <ul class="redes-sociales">
+                    <ul class="redes-sociales" id="redes-sociales">
                         <h1>Redes sociales</h1>
-                        <li id="instagram-footer"><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li id="facebook-footer"><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                        <li id="youtube-footer"><a href=""><i class="fab fa-youtube-square"></i></a></li>
-                        <li id="wpp-footer"><a href=""><i class="fab fa-whatsapp"></i></a></li>             
+                        <li id="instagram-footer"><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                        <li id="facebook-footer"><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                        <li id="youtube-footer"><a href="https://www.youtube.com"><i class="fab fa-youtube-square"></i></a></li>
+                        <li id="wpp-footer"><a href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a></li>             
                     </ul>
                 </div>
             </div>
@@ -244,10 +234,10 @@
                 </ul>
                 <ul class="menu-footer">
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#trabajos">Nuestros trabajos</a></li>
-                    <li><a href="html/servicios.html">Servicios</a></li>
-                    <li><a href="html/medios-pagos.html">Financiacion</a></li>
-                    <li><a href="html/contacto.html">Contacto</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="medios-pagos.html">Financiacion</a></li>
+                    <li><a href="#redes-sociales">Redes sociales</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
             <div class="bottom">
@@ -256,5 +246,6 @@
                 </p>
             </div>
         </footer>
+        <script src="js/animaciones.js"></script>
     </body>
 </html>

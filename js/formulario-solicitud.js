@@ -8,6 +8,7 @@ function send(){
     var apellido = document.querySelector('#apellido').value;
     var dni = document.querySelector('#dni').value;
     var telefono = document.querySelector('#telefono').value;
+    var email = document.querySelector('#email').value;
     var mensaje = document.querySelector('#mensaje').value;
     
     Email.send({
@@ -15,9 +16,9 @@ function send(){
         Username : "a4d955d72fcb6c",
         Password : "bbc73bc28a2e4b",
         To : 'walterdiaz9414@gmail.com',
-        From : "Solicitud_Financiacion@gmail.com",
+        From : email,
         Subject : "Solicitud de financiacion",
-        Body : `${mensaje} <br> <br> DNI: ${dni} <br> TELEFONO: ${telefono} <br> NOMBRE: ${nombre} <br> APELLIDO: ${apellido}`
+        Body : `${mensaje} <br> <br> NOMBRE: ${nombre} <br> APELLIDO: ${apellido} <br> DNI: ${dni} <br> TELEFONO: ${telefono} <br> EMAIL: ${email}`
     })
         .then(function(response){
             if (response == 'OK'){
@@ -26,12 +27,16 @@ function send(){
                     icon: 'success',
                     title: 'Tu solicitud se envio con exito',
                     showConfirmButton: true,
-                    timer: 5500
                   })
 
             }
             else{
-                throw new Error("Error: " + response.statusText);
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'Hubo un error al enviar la solicitud',
+                    showConfirmButton: true,
+                  })
             }
         });
 }

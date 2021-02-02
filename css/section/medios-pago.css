@@ -46,6 +46,7 @@
     background: linear-gradient(320deg, rgba(0, 0, 0, 0.692)90%,rgb(52, 52, 102) 90% 100%);
     margin-top: 1cm;
     margin-bottom:-2cm;
+    text-align: center;
 }
 .cuerpo-container>div{
     background: linear-gradient(220deg,rgb(52, 52, 102) 10%, transparent 10% 100%);
@@ -178,7 +179,7 @@
 .formulario-container>form>div>ul>label>textarea{
     border-radius:35px;
     font-size: 25px;
-    height:6cm;
+    height:4cm;
     padding-left:15px;
     margin-top:5px;
 }
@@ -198,4 +199,136 @@
 .formulario-container>form>button:hover{
     border:9px solid green;
     background: rgb(4, 226, 4);
+}
+
+@media all and (max-width:800px){
+
+
+    /*   PORTADA   //////////////////////////////////////////////////////////////*/
+
+    .portada-pagos{
+        margin-top:2cm;
+        padding:1cm 0px;
+        padding-bottom:2cm;
+    }
+    
+    /*   CUERPO   //////////////////////////////////////////////////////////////*/
+
+    .cuerpo-container{
+        background: linear-gradient(320deg, rgba(0, 0, 0, 0.692)95%,rgb(52, 52, 102) 95% 100%);
+    }
+    .cuerpo-container>div{
+        background: linear-gradient(220deg,rgb(52, 52, 102) 5%, transparent 5% 100%);
+    }
+
+    /* titulo */
+
+    .titulo-container{
+        width:80%;
+        margin-top:1cm;
+    }
+
+    /* INFO */
+
+    .informacion-container{
+        flex-direction: column;
+    }
+    .informacion-container>ul{
+        width:70%;
+        margin:auto;
+        margin-top:0.8cm;
+    }
+    .informacion-container>ul:nth-child(3) i{
+        padding-top:0;
+        padding-bottom: 20px;
+    }
+    
+    .informacion-container>ul>p{
+        font-size:calc(1vw + 13px);
+    }
+
+
+    /* formulario */
+
+
+    .formulario-container>h1{
+        font-size:calc(1vw + 30px);
+        text-align:center;
+    }
+    .formulario-container>p{
+        font-size:calc(1vw + 11px);
+    }
+
+    .formulario-container>form>div{
+        flex-direction:column;
+    }
+
+    .formulario-container>form>div>ul>label{
+        font-size: calc(1vw + 15px);
+    }
+    .formulario-container>form>div>ul>label>textarea{
+        padding-top:10px;
+    }
+}
+
+@media all and (max-width:400px){
+
+
+    /*   PORTADA   //////////////////////////////////////////////////////////////*/
+
+    .portada-pagos>h1{
+        font-size: calc(1vw + 20px);
+    }
+    .portada-pagos>p{
+        font-size: calc(1vw + 12px);
+        padding:0px 15px;
+        padding-top:15px;
+    }
+    .portada-pagos>i{
+        font-size:calc(1vw + 13px);
+        
+    }
+
+
+    /*   CUERPO   //////////////////////////////////////////////////////////////*/
+    .cuerpo-container{
+        background: linear-gradient(320deg, rgba(0, 0, 0, 0.692)97%,rgb(52, 52, 102) 97% 100%);
+        margin-bottom:-4cm;
+    }
+    .cuerpo-container>div{
+        background: linear-gradient(220deg,rgb(52, 52, 102) 3%, transparent 3% 100%);
+    }
+    
+
+    /* titulo */
+    
+    .titulo-container{
+        width:95%;
+    }
+
+
+    /* formulario */
+
+    .formulario-container>form>div>ul{
+        margin-left:0;
+    }
+
+    .formulario-container>form>div>ul>label>input{
+        font-size:13px;
+    }
+    .formulario-container>form>div>ul>label>textarea{
+        font-size: 13px;
+    }
+    .formulario-container>form>button{
+        border:4px solid rgb(4, 226, 4);
+        width: 3cm;
+        padding:4px;
+        font-size: 15px;
+    }
+    .formulario-container>form>button:hover{
+        border:4px solid green;
+    }
+
+
+
 }
