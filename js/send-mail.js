@@ -32,6 +32,7 @@ function send_mail(){
                     position: 'center',
                     icon: 'error',
                     title: 'Hubo un error al enviar el email',
+                    text:'Recorda completar todos tus los datos y que sean correctos',
                     showConfirmButton: true,
                   })
             }

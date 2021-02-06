@@ -25,14 +25,20 @@ function mostrar_menu(){
         $(this).children('.sub-menu').slideToggle();
         if (num2 == 1){
             $('.flechaAbajo').css("display","none");
-            $('.flechaDerecha').css("display","contents");
+            $('.flechaDerecha').css("display","flex");
             num2=0;
         }
         else{
-            $('.flechaAbajo').css("display","contents");
+            $('.flechaAbajo').css("display","flex");
             $('.flechaDerecha').css("display","none");
             num2=1;
         }
+    })
+    $('.sub-menu-li').click(function(){
+        $('.menu-container').animate({
+            left:'-100%'
+        });
+        numero = 1;
     })
 
 }

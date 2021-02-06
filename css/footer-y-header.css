@@ -34,6 +34,7 @@ li{
     box-shadow: 10px 15px 10px black;
     animation:menuPrincipal1 1s;
     position: relative;
+    overflow-x: hidden;
 }
 
 @keyframes menuPrincipal1{
@@ -72,20 +73,26 @@ li{
     color:aquamarine;
     cursor: pointer;
 }
-
-/*FLECHAS MENU*/
-.flechas{
-    position:absolute;
-    margin-right: 0;
-    font-size: 19px;
-    color:white;
+.menu>div>li>div{
+    position:relative;
+    border: 2px solid green;
 }
 
+
+/*FLECHAS MENU*/
+
+.menu>div>li>div>i{
+    position:absolute;
+    right:1cm;
+    font-size: 25px;
+    color:white;
+    margin-top:-0.8cm;
+}
 .flechaDerecha{
     display:none;
 }
 .flechaAbajo{
-    display:contents;
+    display:none;
 }
 
 
@@ -129,8 +136,7 @@ li{
     position: absolute;
     background:rgba(255, 0, 0, 0.712);
     width:5cm;
-    padding-bottom: 17px;
-    padding-top: 17px;
+    padding: 17px 0px;
     border-radius: 15px;
     z-index:1000;
     display:none;
@@ -402,8 +408,14 @@ footer{
 
     .menu>div>li>a{
         font-size: calc(1vw + 14px);
+    }   
+
+    /*FLECHAS MENU*/
+
+    .flechaAbajo{
+        display:flex;
     }
-        
+
 
     /* nombre de la empresa */
     .nom{
@@ -427,7 +439,7 @@ footer{
     
     .sub-menu{
         width:100%;
-        padding-top:0;
+        padding:0px;
         position:relative;
         display: none;
         background:rgb(250, 77, 77);
@@ -440,10 +452,6 @@ footer{
     .menu>li:hover .sub-menu{
         display: none;
     }
-
-    
-
-
 
     /*   FOOTER   //////////////////////////////////////////////////////////////*/   
     /*   INFORMACION-PIE-PAGINA   //////////////////////////////////////////////////////////////*/   

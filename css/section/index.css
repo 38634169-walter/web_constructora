@@ -5,8 +5,6 @@
     width:100%;
 }
 
-
-
 .slider-portada{
     width:90%;
     margin:auto;
@@ -34,7 +32,7 @@
     left:0;
     text-align: center;
     position:absolute;
-    margin-top:-1.5cm;
+    margin-top:-1cm;
 }
 
 .paginacion>li{
@@ -53,8 +51,9 @@
 
 .flechas-slider{
     position: absolute;
-    top:7.5cm;
+    top:8cm;
     height: 15px;    
+    z-index:2;
     
 }
 .flechas-slider>li>i{
@@ -70,6 +69,7 @@
 
 .flecha-izquierda{
     left:2cm;
+    z-index:2;
 }
 .flecha-derecha{
     right:2cm;
@@ -143,12 +143,13 @@
 
 .iconos-portada{
     width: 50%;
-    float:right;
+    margin:auto;
     position: relative;
     margin-top:-1.5cm;
 }
 .iconos-portada>li{
-     margin:9px;
+    float:right;
+     margin:0px 5px;
      position:relative;
      display:inline-block;
      transition: transform 1s;
@@ -163,7 +164,7 @@
     padding:0px 5px;
 }
 .iconos-portada>li>a>i{
-    font-size: calc(1vw + 7px);
+    font-size: 18px;
     padding:9px 4px;
     border-radius: 35px;
     height:0.5cm;
@@ -550,14 +551,16 @@
         width: 65%;
         margin:auto;
         float:none;
-        margin-top: -1.2cm;
+        margin-top: -1.3cm;
     }   
     .iconos-portada>li{
-        float:right;
         margin:3px;
     }
     .iconos-portada>li>a>i{
-        padding:5px 1px;
+        font-size: 20px;
+        height:0.5cm;
+        width:0.8cm;
+        line-height:0.5cm;
     }
 
     #facebook{
@@ -615,9 +618,8 @@
         padding:20px 0px;
     }
 
-
-
     /*   SLIDER   //////////////////////////////////////////////////////////////*/
+
     .super-container-slider{
         top:2cm;
         height:7cm;
@@ -654,6 +656,7 @@
             margin-left: -32cm;
         }
     }
+
     /* titulo */
 
     .trabajos{
@@ -667,28 +670,24 @@
 @media all and (max-width:400px){
 
 
+    /*   TEXTO-PORTADA   //////////////////////////////////////////////////////////////*/
+    
+    .texto-portada{
+        height:6cm;
+    }
+
     /*ICONOS*/
 
     .iconos-portada{
-        width: 65%;
-        margin:auto;
-        float:none;
-        margin-top: -1cm;
+        margin-top:-1cm;
     }   
-    .iconos-portada>li{
-        float:right;
-        margin:3px;
-    }
-    .iconos-portada>li>a>i{
-        padding:4px 0px;
-        height: 18px;
-        width: 25px;
-        
-    }
 
-    #facebook{
-        padding:0;
-    }   
+    .iconos-portada>li>a>i{
+        font-size: 15px;
+        height:0.3cm;
+        width:0.5cm;
+        line-height:0.3cm;
+    }
     
     /*   SLIDER PORTADA   ///////////////////////////////////////////////////////*/
 
