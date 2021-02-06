@@ -12,6 +12,12 @@ li{
     list-style: none;
 }
 
+/*   MENU RESPONSIVE   ///////////////////////////////////////////////////////*/
+
+.menu-responsive , .x-icono-responsive{
+    display:none;
+}
+
 
 /*   MENU   //////////////////////////////////////////////////////////////*/
 
@@ -23,6 +29,7 @@ li{
     left:8%;
     top: 0;
     position:absolute;
+    z-index:1000;
 }
 .menu{
     width: 65%;
@@ -34,7 +41,6 @@ li{
     box-shadow: 10px 15px 10px black;
     animation:menuPrincipal1 1s;
     position: relative;
-    overflow-x: hidden;
 }
 
 @keyframes menuPrincipal1{
@@ -65,6 +71,7 @@ li{
     text-decoration: none;
     color:white;
     font-size: calc(1vw + 5px);
+    display:block;
 }
 .menu>div>li>a:hover{
     color:aquamarine;
@@ -75,7 +82,10 @@ li{
 }
 .menu>div>li>div{
     position:relative;
-    border: 2px solid green;
+}
+
+.menu>div>li:hover .sub-menu{
+    visibility: visible;
 }
 
 
@@ -139,7 +149,7 @@ li{
     padding: 17px 0px;
     border-radius: 15px;
     z-index:1000;
-    display:none;
+    visibility: hidden;
 }
 .sub-menu>li{
     border-bottom: 2px 5px solid aquamarine;
@@ -160,25 +170,7 @@ li{
 .sub-menu>li:hover{
     background: aquamarine;
 }
-.menu>li:hover .sub-menu{
-    display: block;
-}
 
-
-/*   MENU RESPONSIVE   ///////////////////////////////////////////////////////*/
-
-.menu-responsive{
-    display:none;
-}
-
-footer{
-    width:100%;
-    margin-top:7cm;
-    z-index:1;
-    background:rgb(0, 0, 0);
-    /*height:29cm;*/
-    overflow: hidden;
-}
 
 
 /*   INFORMACION-PIE-PAGINA   //////////////////////////////////////////////////////////////*/
@@ -281,6 +273,14 @@ footer{
 
 /*   FOOTER NEGRO  //////////////////////////////////////////////////////////////*/
 
+footer{
+    width:100%;
+    margin-top:7cm;
+    z-index:1;
+    background:rgb(0, 0, 0);
+    overflow: hidden;
+}
+
 .footer-container{
     margin-top:1cm;
     display:flex;
@@ -343,6 +343,8 @@ footer{
     padding:0px 15px;
 }
 
+
+
 @media screen and (max-width:800px){
     
     
@@ -358,15 +360,30 @@ footer{
         z-index:10000;
     }
     .menu-responsive>h1>i{
-        float:right;
-        margin-right:1cm;
+        position: absolute;
+        right:1cm;
         font-size: calc(1vw + 27px);
         color:white;
     }
+
     .menu-responsive>h1{
         font-size: calc(1vw + 27px);
         color:white;
     }
+    
+    .toggle-menu{
+        display:block;
+    }
+
+
+    /* class para agregar y remover javascript */
+    .show{
+        display:block;
+    }
+    .remove{
+        display:none;
+    }
+
 
     /*   MENU PRINCIPAL   ///////////////////////////////////////////////////////*/
 
@@ -388,6 +405,7 @@ footer{
         padding-left: 5px;
         box-shadow: none;
         display:block;
+        overflow-x: hidden;
     }
     
     .menu>div>li{
@@ -441,6 +459,7 @@ footer{
         width:100%;
         padding:0px;
         position:relative;
+        visibility: visible;
         display: none;
         background:rgb(250, 77, 77);
         border-radius: 0;
@@ -449,9 +468,7 @@ footer{
     .sub-menu>li>a{
         font-size: calc(1vw + 14px);
     }
-    .menu>li:hover .sub-menu{
-        display: none;
-    }
+    
 
     /*   FOOTER   //////////////////////////////////////////////////////////////*/   
     /*   INFORMACION-PIE-PAGINA   //////////////////////////////////////////////////////////////*/   

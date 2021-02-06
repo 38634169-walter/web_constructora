@@ -6,19 +6,24 @@ let num2 = 1;
 function mostrar_menu(){
     
     $('.toggle-menu').click(function(){
-        if (numero == 1){
-            $('.menu-container').animate({
-                left:'0'
-            });
-            numero = 0;
-        }
-        else{
-            $('.menu-container').animate({
-                left:'-100%'
-            });
-            numero = 1;
-        }
+        
+        $('.toggle-menu').toggleClass('remove');
+        $('.x-icono-responsive').toggleClass('show');
+        
+        $('.menu-container').animate({
+            left:'0'
+        });
+        
+    });
 
+    $('.x-icono-responsive').click(function(){
+        
+        $('.toggle-menu').toggleClass('remove');
+        $('.x-icono-responsive').toggleClass('show');
+    
+        $('.menu-container').animate({
+            left:'-100%'
+        });
     });
 
     $('#mostrar-menu-btn').click(function(){
@@ -38,7 +43,7 @@ function mostrar_menu(){
         $('.menu-container').animate({
             left:'-100%'
         });
-        numero = 1;
+        
     })
 
 }

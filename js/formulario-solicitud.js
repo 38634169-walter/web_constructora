@@ -37,7 +37,7 @@ function send(){
                     title: 'Hubo un error al enviar la solicitud',
                     text:'Recorda completar todos tus los datos y que sean correctos',
                     showConfirmButton: true,
-                  })
+                })
             }
         });
 }
