@@ -376,15 +376,6 @@ footer{
     }
 
 
-    /* class para agregar y remover javascript */
-    .show{
-        display:block;
-    }
-    .remove{
-        display:none;
-    }
-
-
     /*   MENU PRINCIPAL   ///////////////////////////////////////////////////////*/
 
     .menu-container{
@@ -550,6 +541,15 @@ footer{
         padding-top:15px;
     }    
 
+    /* class para agregar y remover javascript */
+    
+    .show{
+        display:block;
+    }
+    .remove{
+        display:none;
+    }
+
 }
 
 @media all and (max-width:400px){
@@ -583,5 +583,5 @@ footer{
     .bottom>p{
         font-size:calc(1vw + 9px);
     }
-
+    
 }

@@ -27,7 +27,7 @@ function mostrar_menu(){
     });
 
     $('#mostrar-menu-btn').click(function(){
-        $(this).children('.sub-menu').slideToggle();
+        $('.sub-menu').toggleClass('show');
         if (num2 == 1){
             $('.flechaAbajo').css("display","none");
             $('.flechaDerecha').css("display","flex");
@@ -39,6 +39,7 @@ function mostrar_menu(){
             num2=1;
         }
     })
+
     $('.sub-menu-li').click(function(){
         $('.menu-container').animate({
             left:'-100%'
