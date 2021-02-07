@@ -364,6 +364,7 @@ footer{
         right:1cm;
         font-size: calc(1vw + 27px);
         color:white;
+        cursor:pointer;
     }
 
     .menu-responsive>h1{

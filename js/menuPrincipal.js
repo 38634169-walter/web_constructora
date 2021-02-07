@@ -44,6 +44,8 @@ function mostrar_menu(){
         $('.menu-container').animate({
             left:'-100%'
         });
+        $('.toggle-menu').toggleClass('remove');
+        $('.x-icono-responsive').toggleClass('show');
         
     })
 
