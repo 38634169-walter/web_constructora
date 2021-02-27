@@ -1,4 +1,6 @@
 
+
+
 /*   SLIDER PORTADA   ///////////////////////////////////////////////////////*/
 
 .slider-portada-container{
@@ -138,7 +140,6 @@
 
 }
 
-
 /*ICONOS*/
 
 .iconos-portada{
@@ -178,13 +179,32 @@
 
 /*   TEXTO-PRESENTACION   //////////////////////////////////////////////////////////////*/
 
-.presentacion{
-    width:90%;
+
+.presentacion-container{
+    background: radial-gradient(transparent 70%, rgb(168, 23, 23)  70% 90%),url(../../imagenes/relleno/construccion-costos-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top:1cm;
+    padding-bottom:2cm;
+    padding-top:1cm;
+}
+.presentacion-container>h1{
+    width:50%;
     margin:auto;
+    font-size:calc(1vw + 30px);
+    padding:10px;
+    background:white;
+    border-radius:35px;
+    box-shadow: 10px 10px 15px black;
+    text-shadow: 2px 2px 12px white;
+    text-align: center;
+}
+
+.presentacion{
     margin-top:1cm;
     display:flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
 .presentacion>ul{
@@ -199,8 +219,8 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    opacity:0;
     transition: 1s;
+    opacity:0;
     border-radius: 35px;
     box-shadow:15px 10px 15px black;
     text-align:center;
@@ -268,7 +288,7 @@
 }
 @keyframes aparecerIzq {
     0%{
-        transform:translateX(-90px);
+        transform:translateX(-190px);
     }
     100%{
         transform: translateX(0px);
@@ -282,7 +302,7 @@
 }
 @keyframes aparecerArriba{
     0%{
-        transform: translateY(-90px);
+        transform: translateY(-190px);
     }
     100%{
         transform: translateY(0px);
@@ -295,7 +315,7 @@
 }
 @keyframes aparecerDer{
     0%{
-        transform: translateX(90px);
+        transform: translateX(190px);
     }
     100%{
         transform: translateX(0px);
@@ -309,11 +329,9 @@
 
 
 .info-2-container{
-    margin-top: 1cm;
     width:100%;
     background: linear-gradient(20deg,rgba(240, 78, 78, 0.336) 30%,transparent 80%),url(../../imagenes/relleno/relleno1.jpg);
     background-size: 100% 100%;
-    border:2px solid rgb(149, 155, 149);
 }
 .info-2-container>div{
     background: rgba(0, 0, 0, 0.432);
@@ -327,6 +345,7 @@
 .info-titulo{
     text-align: center;
     padding:0px 10px;
+    opacity:0;
 }
 .info-titulo>i{
     font-size: calc(1vw + 35px);
@@ -355,6 +374,7 @@
     flex-direction: column;
     justify-items: center;
     justify-content: center;
+    opacity:0;
 }
 .seccion-izquierda>p{
     font-size: calc(1vw + 11px);
@@ -384,6 +404,7 @@
     display:flex;
     justify-content: center;
     justify-items: center;
+    opacity:0;
 }
 .seccion-derecha>iframe{
     width:80%;
@@ -410,6 +431,7 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    opacity:0;
 }
 .info3-super-container>div>div>ul>h1{
     color:black;
@@ -569,10 +591,17 @@
 
 
     /*   TEXTO-PRESENTACION   //////////////////////////////////////////////////////////////*/
+    .presentacion-container>h1{
+        width:70%;
+    }
     
-    .presentacion{
+    .presentacion-container{
         margin-top:12cm;
+        padding:10px;
+    }
+    .presentacion{
         flex-direction:column;
+        margin-top:0.5cm;
     }
     .presentacion>ul{
         width:60%;
@@ -714,9 +743,16 @@
     }
 
     /*   TEXTO-PRESENTACION   //////////////////////////////////////////////////////////////*/
-    
+
+    .presentacion-container{
+        padding-top:1cm;
+    }
+    .presentacion-container>h1{
+        width:90%;
+        font-size:calc(1vw + 19px);
+    }
     .presentacion{
-        margin-top:11cm;
+
     }
     .presentacion>ul{
         width:100%;
