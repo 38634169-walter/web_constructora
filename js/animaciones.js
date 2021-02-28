@@ -14,6 +14,7 @@ function mostrar_animaciones(){
     let scrollTop = document.documentElement.scrollTop;
 
     for(var i = 0; i < 9; i++){
+        
         let scrollAnimationOne = animationsOne[i].offsetTop;
         let scrollAnimationTwo = animationsTwo[i].offsetTop;
         let scrollAnimationThree = animationsThree[i].offsetTop;

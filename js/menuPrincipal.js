@@ -8,12 +8,15 @@ function mostrar_menu(){
     $('.toggle-menu').click(mostrar);
 
     $('.x-icono-responsive').click(ocultar);
-    $('section').click(ocultar);
-    $('footer').click(ocultar);
-
+    
+    
+    if ($(window).width() <= 800){
+        $('section').click(ocultar);
+        $('footer').click(ocultar);
+        $('#sub-menu-li').click(submenu_flechas);
+    }
 
     $('.mostrar-menu-btn').click(menu_flechas);
-    $('#sub-menu-li').click(submenu_flechas);
 
 }
 
