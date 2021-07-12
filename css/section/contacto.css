@@ -2,7 +2,7 @@
 /*   PORTADA   //////////////////////////////////////////////////////////////*/
 
 .portada-contacto{
-    background: linear-gradient(60deg,rgba(0, 0, 0, 0.637)100%,transparent 95% 100%),url(../../imagenes/portada/1.jpg);
+    background: linear-gradient(60deg,rgba(0, 0, 0, 0.637)100%,transparent 95% 100%),url(../../imagenes/portada/1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

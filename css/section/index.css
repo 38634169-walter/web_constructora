@@ -15,14 +15,14 @@
     background-size: 100% 100%;
 }
 .s1{
-    background-image: url(../../imagenes/slider-portada/s1.jpeg);
+    background-image: url(../../imagenes/slider-portada/s1.webp);
 }
 .s2{
-    background-image: url(../../imagenes/slider-portada/s2.jpg);
+    background-image: url(../../imagenes/slider-portada/s2.webp);
     display: none;
 }
 .s3{
-    background-image: url(../../imagenes/slider-portada/s3.jpg);
+    background-image: url(../../imagenes/slider-portada/s3.webp);
     display: none;
 }
 
@@ -181,7 +181,7 @@
 
 
 .presentacion-container{
-    background: radial-gradient(transparent 70%, rgb(168, 23, 23)  70% 90%),url(../../imagenes/relleno/construccion-costos-1.jpeg);
+    background: radial-gradient(transparent 70%, rgb(168, 23, 23)  70% 90%),url(../../imagenes/relleno/construccion-costos-1.webp);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-top:1cm;
@@ -330,7 +330,7 @@
 
 .info-2-container{
     width:100%;
-    background: linear-gradient(20deg,rgba(240, 78, 78, 0.336) 30%,transparent 80%),url(../../imagenes/relleno/relleno1.jpg);
+    background: linear-gradient(20deg,rgba(240, 78, 78, 0.336) 30%,transparent 80%),url(../../imagenes/relleno/relleno1.webp);
     background-size: 100% 100%;
 }
 .info-2-container>div{
@@ -416,7 +416,7 @@
 
 .info3-super-container{
     margin-top: 2cm;
-    background: linear-gradient(90deg,white 20%,rgb(179, 2, 2) 60%,rgba(255, 255, 255, 0.63)),url(../../imagenes/relleno/relleno5.jpg);
+    background: linear-gradient(90deg,white 20%,rgb(179, 2, 2) 60%,rgba(255, 255, 255, 0.63)),url(../../imagenes/relleno/relleno5.webp);
     background-size: 100% 100%;
 }
 .info3-super-container>div{
