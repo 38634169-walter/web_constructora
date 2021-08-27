@@ -45,21 +45,21 @@
 
 /* tituo y introduccion */
 .cuerpo-container{
-    background:linear-gradient(270deg,red 5%, rgba(0, 0, 0, 0.61)5% 95%,red 95% 100%);
+    background:linear-gradient(270deg, rgb(97, 29, 29) 5%, rgba(0, 0, 0, 0.61)5% 95%,rgb(97, 29, 29) 95% 100%);
     padding:2cm 10px;
     text-align:center;
     margin-top:1cm;
 }
 .cuerpo-container>h1{
-    text-shadow: 2px 2px 12px white;
     font-size: calc(1vw + 35px);
     padding-bottom:30px;
-    background:red;
+    background:rgb(97, 29, 29);
     width:60%;
     margin:auto;
     padding-top:3cm;
     margin-top:-2cm;
     margin-bottom:2cm;
+    color:white;
 }
 .cuerpo-container>div{
     width:60%;
