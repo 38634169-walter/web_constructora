@@ -25,7 +25,7 @@ function mostrar(){
     $('.toggle-menu').css({'display':'none'});
     $('.x-icono-responsive').css({'display':'block'});
     
-    $('.menu-container').css({'left':'0','transition':'all 1s'});
+    $('.menu-container').css({'transiiton':'all 1s','left':'0'});
     num2=0;
     menu_flechas();
     
@@ -36,7 +36,7 @@ function ocultar(){
     $('.toggle-menu').css({'display':'block'});
     $('.x-icono-responsive').css({'display':'none'});
 
-    $('.menu-container').css({'left':'-100%'});
+    $('.menu-container').css({'transiiton':'all 1s','left':'-100%'});
 }
 
 function menu_flechas(){

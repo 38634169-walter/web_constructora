@@ -45,7 +45,7 @@
 
 .mail-container{
     margin-top:1cm;
-    margin-bottom:-2cm;
+    margin-bottom:-3cm;
     background:linear-gradient(80deg, rgba(0, 0, 0, 0.616) 10% 90%,rgba(255, 0, 0, 0.637) 90% 100%);
 }
 .mail-container>div{
@@ -114,7 +114,10 @@
     }
 
     /*   MAIL CONTAINER   //////////////////////////////////////////////////////////////*/
-
+    
+    .mail-container{
+        margin-bottom:-4cm;
+    }
     /* formulario */
 
     .mail-container>div>form{
@@ -131,6 +134,7 @@
         height:5cm;
         font-size: 15px;
     }
+    
 }
 
 

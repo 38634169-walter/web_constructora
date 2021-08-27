@@ -368,7 +368,7 @@ footer{
     }
 
     .menu-responsive>h1{
-        font-size: calc(1vw + 27px);
+        font-size: 25px;
         color:white;
     }
     
@@ -382,9 +382,9 @@ footer{
     .menu-container{
         width:80%;
         left:-100%;
-        top:59px;
+        top:56px;
         position:fixed;
-        height:calc(100vh - 59px);
+        height:calc(100vh - 56px);
         overflow: scroll;
         background:red;
         z-index:10000;
@@ -453,12 +453,12 @@ footer{
         position:relative;
         visibility: visible;
         display: none;
-        background:rgb(250, 77, 77);
         border-radius: 0;
         margin-bottom:1cm;
     }
     .sub-menu>li>a{
         font-size: calc(1vw + 14px);
+        padding-left:15px;
     }
     
 

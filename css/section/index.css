@@ -8,7 +8,7 @@
 }
 
 .slider-portada{
-    width:90%;
+    width:100%;
     margin:auto;
     height:15cm;
     top:2cm;
@@ -56,7 +56,6 @@
     top:8cm;
     height: 15px;    
     z-index:2;
-    
 }
 .flechas-slider>li>i{
     cursor: pointer;
@@ -181,12 +180,11 @@
 
 
 .presentacion-container{
+    padding-top:1cm;
     background: radial-gradient(transparent 70%, rgb(168, 23, 23)  70% 90%),url(../../imagenes/relleno/construccion-costos-1.webp);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin-top:1cm;
     padding-bottom:2cm;
-    padding-top:1cm;
 }
 .presentacion-container>h1{
     width:50%;
@@ -541,8 +539,7 @@
     /*   SLIDER PORTADA   ///////////////////////////////////////////////////////*/
 
     .slider-portada-container{
-        position:absolute;
-        top:1.5cm;
+        margin-top:56px;
     }
 
     .slider-portada{
@@ -552,7 +549,7 @@
     /*   TEXTO-PORTADA   //////////////////////////////////////////////////////////////*/
 
     .texto-portada-container{
-        top:2cm;
+        top:4cm;
     }
     
     .texto-portada{
@@ -565,6 +562,12 @@
 
     .texto-portada>li>p{
         font-size: calc(1vw + 10px);
+    }
+    
+    /*FLECHAS*/
+
+    .flechas-slider{
+        top:10cm;
     }
 
     /*ICONOS*/
@@ -596,7 +599,6 @@
     }
     
     .presentacion-container{
-        margin-top:12cm;
         padding:10px;
     }
     .presentacion{
@@ -718,11 +720,21 @@
         line-height:0.3cm;
     }
     
+    /*   TEXTO-PORTADA   //////////////////////////////////////////////////////////////*/
+
+
+    .texto-portada-container{
+        top:2cm;
+    }
+
     /*   SLIDER PORTADA   ///////////////////////////////////////////////////////*/
 
     .slider-portada{
-        margin-top:1cm;
+        
         height:8cm;
+    }
+    .flechas-slider{
+        top:8.5cm;
     }
     .flechas-slider>li>i{
         padding:9px;
@@ -735,12 +747,6 @@
     .flecha-derecha{
         right:1cm;
     }   
-    /*   TEXTO-PORTADA   //////////////////////////////////////////////////////////////*/
-
-
-    .texto-portada-container{
-        top:3cm;
-    }
 
     /*   TEXTO-PRESENTACION   //////////////////////////////////////////////////////////////*/
 
