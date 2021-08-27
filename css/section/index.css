@@ -149,10 +149,10 @@
 }
 .iconos-portada>li{
     float:right;
-     margin:0px 5px;
-     position:relative;
-     display:inline-block;
-     transition: transform 1s;
+    margin:0px 5px;
+    position:relative;
+    display:inline-block;
+    transition: transform 1s;
 }
 .iconos-portada>li:hover{
     transform:scale(1.8)
@@ -539,7 +539,7 @@
     /*   SLIDER PORTADA   ///////////////////////////////////////////////////////*/
 
     .slider-portada-container{
-        margin-top:56px;
+        margin-top:54px;
     }
 
     .slider-portada{
@@ -756,9 +756,6 @@
     .presentacion-container>h1{
         width:90%;
         font-size:calc(1vw + 19px);
-    }
-    .presentacion{
-
     }
     .presentacion>ul{
         width:100%;
